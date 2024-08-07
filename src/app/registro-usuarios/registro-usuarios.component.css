@@ -1,0 +1,139 @@
+.body{
+    background: linear-gradient(265deg, white 55%, #005B96 40%);;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+form {
+  height: 30%;
+}
+
+h1 {
+  font-size: 22px ;
+}
+
+mat-card {
+    max-width: 400px;
+    height: 80%;
+    margin-left: 50px;
+  }
+  
+mat-form-field {
+    width: 90%;
+    height: 60px;
+  }
+
+#reg-btn{
+    margin: 15px;
+    margin-left: 25%;
+    width: 40%;
+    padding: 3px;
+    background-color: #0ABA46;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+#reg-btn:hover{
+    transform: scale(1.05);
+}
+
+.google {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 70%;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: transform 0.2s ease-in-out;
+    margin-left: 10%;
+  }
+
+.google img {
+    width: 20px;
+    margin-right: 10px;
+   
+}
+  
+.terms{
+    display: block;
+    text-align: center;
+    margin-top: 93%;
+    color: #0d0b7c;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+.terms:hover {
+    text-decoration: underline;
+  }
+ 
+mat-card.sign-in-form {
+   background-color: #ffffff;
+    color: black; 
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+.sign-in-form {
+    background-color: #d41d1d; 
+    padding: 10px; 
+    border-radius: 8px;  
+  }
+
+input.mat-input-element{
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+input{
+  color: black;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-underline {
+    display: none;
+}
+
+input#mat-input-0{
+  color: black;
+}
+
+input#mat-input-1{
+  color: black;
+}
+
+input#mat-input-2{
+  color: black;
+}
+
+input#mat-input-3{
+  color: black;
+}
+
+input#mat-input-4{
+  color: black;
+}
+
+input#mat-input-5{
+  color: black;
+}
+
+input#mat-input-6{
+  color: black;
+}
+
