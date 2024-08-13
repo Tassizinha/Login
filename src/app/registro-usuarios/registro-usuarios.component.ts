@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 import { cpfValidator } from '../validatorCpf/validators';
 
 
+
 @Component({
   selector: 'app-registro-usuarios',
   standalone: true,
@@ -19,7 +20,8 @@ import { cpfValidator } from '../validatorCpf/validators';
     MatFormFieldModule, 
     MatInputModule, 
     ReactiveFormsModule, 
-    NgIf, ],
+    NgIf, 
+   ],
 
   templateUrl: './registro-usuarios.component.html',
   styleUrl: './registro-usuarios.component.css'

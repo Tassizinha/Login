@@ -13,25 +13,26 @@ form {
 }
 
 h1 {
-  font-size: 22px ;
+  font-size: 23px ;
 }
 
 mat-card {
     max-width: 400px;
-    height: 80%;
+    height: 85%;
     margin-left: 50px;
   }
   
 mat-form-field {
     width: 90%;
-    height: 60px;
-  }
+    height: 73px;
+}
+
 
 #reg-btn{
     margin: 15px;
     margin-left: 25%;
     width: 40%;
-    padding: 3px;
+    padding: 4px;
     background-color: #0ABA46;
     color: #fff;
     border: none;
@@ -42,45 +43,18 @@ mat-form-field {
     display: block;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
   }
 
 #reg-btn:hover{
     transform: scale(1.05);
 }
 
-.google {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    width: 70%;
-    padding: 5px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 10px;
-    transition: transform 0.2s ease-in-out;
-    margin-left: 10%;
-  }
-
-.google img {
-    width: 20px;
-    margin-right: 10px;
-   
+.password-mismatch-warning {
+  color: red;
+  font-size: 14px;
+  margin-top: -7px;
 }
-  
-.terms{
-    display: block;
-    text-align: center;
-    margin-top: 93%;
-    color: #0d0b7c;
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-.terms:hover {
-    text-decoration: underline;
-  }
  
 mat-card.sign-in-form {
    background-color: #ffffff;
@@ -136,4 +110,29 @@ input#mat-input-5{
 input#mat-input-6{
   color: black;
 }
+
+.solo-group{
+  width: 50px;
+}
+
+.numeCasa{
+ margin-right: 25px;
+ width: 30%;
+}
+
+
+.flex-container {
+  display: flex;
+  gap: 20px; 
+}
+
+.flex-grow {
+  flex-grow: 1; 
+}
+
+
+
+
+
+
 

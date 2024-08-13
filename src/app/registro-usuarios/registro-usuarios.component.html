@@ -10,8 +10,8 @@
     
           <mat-form-field appearance="outline">
             <mat-label>CPF</mat-label>
-            <input matInput type="cpf" formControlName="cpf" class="input-group" required>
-            <mat-error *ngIf="registrationForm.get('cpf')?.hasError('invalidCpf')">
+            <input matInput type="cpf" formControlName="cpf"  class="input-group" required>
+            <mat-error *ngIf="registrationForm.get('cpf')?.hasError('invalidCpf')">  
               CPF inválido
             </mat-error>
           </mat-form-field>
@@ -20,7 +20,7 @@
             <mat-label>Email</mat-label>
             <input matInput type="email" formControlName="email" class="input-group" required>
           </mat-form-field>
-      
+
           <mat-form-field appearance="outline">
             <mat-label>CEP</mat-label>
             <input matInput type="cep" formControlName="cep" class="input-group" required (blur)="consultarCep()">
@@ -28,12 +28,21 @@
               CEP inválido
             </mat-error>
           </mat-form-field>
+<!-- ------------------------------------------------- -->
+          <div class="flex-container">
+            <mat-form-field appearance="outline" class="flex-grow">
+              <mat-label>Endereço</mat-label>
+              <input matInput type="endereco" formControlName="endereco" required>
+            </mat-form-field>
 
-          <mat-form-field appearance="outline">
-            <mat-label>Endereço</mat-label>
-            <input matInput type="endereco" formControlName="endereco" class="input-group" required>
-          </mat-form-field>
-    
+            <div class="numeCasa">
+              <mat-form-field appearance="outline">
+                <mat-label >Número</mat-label>
+                <input matInput type="numCasa" formControlName="numCasa" class="num" required>
+              </mat-form-field>
+            </div>
+          </div>
+<!-- -------------------------------------------------    -->
           <mat-form-field appearance="outline">
             <mat-label>Password</mat-label>
             <input matInput type="password" formControlName="password" class="input-group" required>
@@ -42,16 +51,15 @@
           <mat-form-field appearance="outline">
             <mat-label>Confirm Password</mat-label>
             <input matInput type="password" formControlName="confirmPassword" class="input-group" required>
+            <div *ngIf="registrationForm.errors?.['mismatch']" class="password-mismatch-warning">
+              <p>Passwords do not match.</p>
+            </div>
           </mat-form-field>
+
+
       
-          <button id="reg-btn" mat-raised-button color="primary" type="submit">Sign In</button>
-          <button class="google" mat-raised-button color="accent" type="button" >
-            <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo" />
-            Continue with Google
-          </button>
+          <button id="reg-btn" mat-raised-button color="primary" type="submit">Register</button>
         </form>
-        <a href="#" class="terms">Terms of Service</a>
       </mat-card>
 </div>
 
-  
