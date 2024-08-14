@@ -26,10 +26,10 @@ import { Router } from '@angular/router';
   styleUrl: './registro-usuarios.component.css'
 })
 
-export class SigninPageComponent implements OnInit{
+export class RegistroUsuariosComponent implements OnInit{
   registrationForm!: FormGroup;
   
-  constructor(private fb: FormBuilder, private http: HttpClient,  private router: Router) {  }
+  constructor(private fb: FormBuilder, private http: HttpClient,) {  }
   
   ngOnInit(): void {
     this.registrationForm = this.fb.group({
@@ -80,7 +80,7 @@ cepValidator(control: any) {
     if (this.registrationForm.valid){
       console.log(this.registrationForm.value);
 
-      this.router.navigate(['/login']);
+     // this.router.navigate(['/login']);
     }else{ 
       console.log('Formulário é inválido');
     }
