@@ -8,8 +8,7 @@ import { FormGroup, Validators } from '@angular/forms';
 import { NgIf } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { cpfValidator } from '../validatorCpf/validators';
-
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro-usuarios',
@@ -27,11 +26,11 @@ import { cpfValidator } from '../validatorCpf/validators';
   styleUrl: './registro-usuarios.component.css'
 })
 
-export class RegistroUsuariosComponent implements OnInit{
+export class SigninPageComponent implements OnInit{
   registrationForm!: FormGroup;
   
-  constructor(private fb: FormBuilder, private http: HttpClient) {  }
- 
+  constructor(private fb: FormBuilder, private http: HttpClient,  private router: Router) {  }
+  
   ngOnInit(): void {
     this.registrationForm = this.fb.group({
       name: ['', Validators.required],
@@ -39,7 +38,7 @@ export class RegistroUsuariosComponent implements OnInit{
       email: ['', [Validators.required, Validators.email]],
       endereco: ['', Validators.required],
       cep: ['', Validators.required],
-      password: ['', Validators.required],
+      password: ['', [Validators.required, Validators.minLength(8)]],
       confirmPassword: ['', Validators.required]
     }, { validator: this.passwordMatchValidator });
   }
@@ -80,8 +79,11 @@ cepValidator(control: any) {
   onSubmit(): void {
     if (this.registrationForm.valid){
       console.log(this.registrationForm.value);
+
+      this.router.navigate(['/login']);
     }else{ 
       console.log('Formulário é inválido');
     }
   }
 }
+
