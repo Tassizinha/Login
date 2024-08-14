@@ -34,13 +34,11 @@
               <mat-label>Endereço</mat-label>
               <input matInput type="endereco" formControlName="endereco" required>
             </mat-form-field>
-
-            <div class="numeCasa">
-              <mat-form-field appearance="outline">
+           
+              <mat-form-field appearance="outline" class="flex-grow2">
                 <mat-label >Número</mat-label>
                 <input matInput type="numCasa" formControlName="numCasa" class="num" required>
-              </mat-form-field>
-            </div>
+              </mat-form-field>           
           </div>
 <!-- -------------------------------------------------    -->
           <mat-form-field appearance="outline">
@@ -54,10 +52,7 @@
             <div *ngIf="registrationForm.errors?.['mismatch']" class="password-mismatch-warning">
               <p>Passwords do not match.</p>
             </div>
-          </mat-form-field>
-
-
-      
+          </mat-form-field>      
           <button id="reg-btn" mat-raised-button color="primary" type="submit">Register</button>
         </form>
       </mat-card>

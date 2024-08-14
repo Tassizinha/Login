@@ -9,30 +9,36 @@
 }
 
 form {
-  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
 }
 
 h1 {
+  width: 90%;
   font-size: 23px ;
+  margin-left: 20px;
 }
 
 mat-card {
     max-width: 400px;
-    height: 85%;
+    height: auto;
     margin-left: 50px;
   }
   
 mat-form-field {
     width: 90%;
-    height: 73px;
+    /* height: 73px; */
 }
 
 
 #reg-btn{
-    margin: 15px;
-    margin-left: 25%;
+    /* margin: 15px; */
+    /* margin-left: 25%; */
     width: 40%;
-    padding: 4px;
+    padding: 10px;
     background-color: #0ABA46;
     color: #fff;
     border: none;
@@ -43,7 +49,7 @@ mat-form-field {
     display: block;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    /* margin-bottom: 10px; */
   }
 
 #reg-btn:hover{
@@ -57,10 +63,10 @@ mat-form-field {
 }
  
 mat-card.sign-in-form {
-   background-color: #ffffff;
-    color: black; 
-    padding: 20px;
-    border-radius: 20px;
+  background-color: #ffffff;
+  color: black; 
+  padding: 20px;
+  border-radius: 20px;
   }
 
 .sign-in-form {
@@ -112,26 +118,71 @@ input#mat-input-6{
 }
 
 .solo-group{
-  width: 50px;
+  width: 40px;
 }
 
-.numeCasa{
- margin-right: 25px;
- width: 30%;
-}
+
 
 
 .flex-container {
+  width: 90%;
   display: flex;
   gap: 20px; 
 }
 
 .flex-grow {
-  flex-grow: 1; 
+  flex: 1; 
+}
+.flex-grow2 {
+  flex: 0.5; 
 }
 
 
+@media only screen and (min-width: 1920px)  {
+  mat-card {
+    max-width: 3000px;
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 1200px)  {
+  .body{
+    background: linear-gradient(265deg, white 50%, #005B96 0%);
+  }
+}
+@media only screen and (max-width: 900px)  {
+  .body{
+    background: linear-gradient(265deg, white 35%, #005B96 0%);
+  }
+}
 
+@media only screen and (max-width: 740px)  {
+  .body{
+    background: linear-gradient(265deg, white 25%, #005B96 0%);
+  }
+}
+
+@media only screen and (max-width: 630px)  {
+  .body{
+    background: linear-gradient(265deg, white 18%, #005B96 0%);
+  }
+}
+@media only screen and (max-width: 590px)  {
+  .body{
+    background: none;
+  }
+}
+@media only screen and (max-width: 450px)  {
+  mat-card {
+    max-width: 350px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 350px)  {
+  mat-card {
+    max-width: 320px;
+
+  }
+}
 
 
 
